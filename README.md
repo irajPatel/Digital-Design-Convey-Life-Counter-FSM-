@@ -1,11 +1,10 @@
 # Digital-Design-Counter-FSM-
 This repository contains digital design projects focused on the implementation of Counters and Finite State Machines (FSM). These designs are written in Verilog, a hardware description language, and are simulated and verified using open-source tools.
 
-# Counters Simulation Project
 
 ## Overview
 
-This project contains Verilog code for simulating and synthesizing different types of digital counters. The simulation process involves using open-source tools like **Iverilog**, **Yosys**, and **GTKWave**.
+This project contains Verilog code for simulating and synthesizing different types of digital counters, FSM . The simulation process involves using open-source tools like **Iverilog**, **Yosys**, and **GTKWave**.
 
 ## Prerequisites
 
