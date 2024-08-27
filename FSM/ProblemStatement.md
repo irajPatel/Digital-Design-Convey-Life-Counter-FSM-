@@ -2,11 +2,6 @@
 
 # FSM: Timer Control
 
-This exercise is the fourth component in a series of five exercises that build a complex counter out of several smaller circuits. Refer to the final exercise for the overall design.
-
-**Prerequisites**: It is recommended to complete the following exercises first:
-- FSM: Enable Shift Register
-- FSM: Sequence Recognizer
 
 ## Objective
 
