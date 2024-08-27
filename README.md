@@ -57,10 +57,10 @@ You need to have the Sky130 PDK (Process Design Kit) available to use the sky130
 Iverilog is used to compile Verilog code into a format that can be simulated. To compile the Verilog files in this project, use the following command:
 
 ```bash
-iverilog counter.v counter_tb.v
+iverilog fileName.v tb_fileName.v
 ```
 
-This command compiles the module file `counter.v` and the testbench file `counter_tb.v`, generating an executable file named `a.out`.
+This command compiles the module file `fileName.v` and the testbench file `tb_fileName`, generating an executable file named `a.out`.
 
 ### 2. Running the Simulation
 
@@ -70,14 +70,14 @@ To run the simulation and generate a waveform file (`.vcd` file), use the follow
 ./a.out
 ```
 
-This will produce a file called `counter_tb.vcd`, which contains the simulation waveform data.
+This will produce a file called `tb_fileName.vcd`, which contains the simulation waveform data.
 
 ### 3. Viewing the Simulation with GTKWave
 
 GTKWave is used to visualize the waveform generated during simulation. To open the waveform file in GTKWave, use the following command:
 
 ```bash
-gtkwave counter_tb.vcd
+gtkwave tb_fileName.vcd
 ```
 
 This will open the GTKWave interface, where you can view the signals over time and analyze the behavior of the counters.
@@ -103,18 +103,18 @@ Yosys is used for the synthesis of Verilog RTL designs. Follow these steps to sy
 3. **Read the Verilog File**: Load the Verilog file that defines the counter:
 
     ```bash
-    read_verilog counter.v
+    read_verilog fileName.v
     ```
 
-    This command reads the `counter.v` file into Yosys, making it ready for synthesis.
+    This command reads the `fileName.v` file into Yosys, making it ready for synthesis.
 
 4. **Synthesize the Design**: Perform logic synthesis on the top module of the Verilog design:
 
     ```bash
-    synth -top counter
+    synth -top fileName
     ```
 
-    The `synth -top counter` command performs logic synthesis targeting the top-level module named `counter`.
+    The `synth -top fileName` command performs logic synthesis targeting the top-level module named `fileName`.
 
 5. **Technology Mapping with ABC**: Map the synthesized design to the standard cells defined in the liberty file:
 
@@ -132,11 +132,7 @@ Yosys is used for the synthesis of Verilog RTL designs. Follow these steps to sy
 
     This command opens a graphical viewer showing the synthesized netlist, which provides insights into the synthesized logic structure.
 
-## File Structure
 
-- `counter.v`: Contains the Verilog code for the counter module.
-- `counter_tb.v`: The testbench used for simulating the counter module.
-- `README.md`: Documentation for the project.
 
 ## Conclusion
 
