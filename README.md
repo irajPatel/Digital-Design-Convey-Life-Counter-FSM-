@@ -1,4 +1,4 @@
-# Digital-Design-Counter-FSM-
+# Digital-Design-Counter-FSM
 This repository contains digital design projects focused on the implementation of Counters and Finite State Machines (FSM). These designs are written in Verilog, a hardware description language, and are simulated and verified using open-source tools.
 
 
