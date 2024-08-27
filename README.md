@@ -83,7 +83,7 @@ This will open the GTKWave interface, where you can view the signals over time a
 
 ### 4. Synthesizing the Verilog Code with Yosys
 
-Yosys is used for the synthesis of Verilog RTL designs. Follow these steps to synthesize the counter:
+Yosys is used for the synthesis of Verilog RTL designs. Follow these steps to synthesize the Module:
 
 1. **Invoke Yosys**: Start Yosys by running:
 
